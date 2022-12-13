@@ -8,9 +8,11 @@
 
 # API
 
-- https://developers.google.com/youtube/v3/docs/search/list
-- get your api key ( credentials tab ): https://console.cloud.google.com/apis/dashboard
-- if you don't have API key you can use (mockData) const in App.tsx
+- YouTube API: https://developers.google.com/youtube/v3/docs/search/list
+- api key is not included in the code.
+- to get your api key ( credentials tab ): https://console.cloud.google.com/apis/dashboard
+- after getting your api key, create a .env file in the root directory and add your api key as REACT_APP_API_KEY=your_api_key
+- to run the app, run npm start
 
 ## Available Scripts
 
