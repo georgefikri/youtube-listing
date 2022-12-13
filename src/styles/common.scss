@@ -1,0 +1,42 @@
+// import main.scss
+@import "./main";
+
+
+body {
+    font-family: Roboto, Arial, sans-serif;
+    background-color: $color-background-gray;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+
+    &__header {
+    background-color: $color-white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+
+    @media (max-width: 1150px) {
+        position: static
+    }
+    
+    }
+
+}
+
+.wrapper__content__body {
+    margin-top: 56px;
+    width: 100%;
+
+    @media (max-width: 1150px) {
+        margin-top: 0;
+    }
+
+   
+}

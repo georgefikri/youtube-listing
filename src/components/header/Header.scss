@@ -1,0 +1,89 @@
+@import '../../styles/common.scss';
+.header {
+    height: 56px;
+    display: flex;
+    @include mainWidth;
+
+    @media (max-width: 650px) {
+        background-color: $color-red-youtube;
+    }
+
+
+    &__logo {
+    height: 56px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    & img {
+        height: 20px;
+        width: 90px;
+
+        @media (max-width: 650px) {
+            width: 40px;
+            height: 40px;
+        }
+    }
+    }
+
+    &__search {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+        border-radius: 2px;
+        height: 56px;
+        @media (max-width: 650px) {
+            justify-content: flex-start;
+        }
+
+        & input {
+            border: none;
+            outline: none;
+            width: 570px;
+            padding: 0 0 0 10px;
+            font-size: 16px;
+            border-radius: 2px;
+            height: 40px;
+            border: 1px solid $color-gray;
+
+            @media (max-width: 1150px) {
+                width: 65%;
+            }
+        }
+
+    }
+    &__searchButton {
+        background-color: $color-gray94;
+        border: none;
+        outline: none;
+        width: 40px;
+        height: 40px;
+        border-radius: 2px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.2s ease-in-out;
+        border: 1px solid $color-gray;
+        border-left: 0;
+
+        @media (max-width: 650px) {
+            background-color: transparent;
+            margin-left: 10px;
+            border: 0;
+            & svg {
+                fill: $color-white;
+            }
+        }
+
+        &:hover {
+            background-color: $color-gray90;
+            @media (max-width: 650px) {
+                background-color: transparent;
+            }
+        }
+    }
+
+}
