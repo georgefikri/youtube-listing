@@ -1,4 +1,4 @@
-# YouTube Videos listing Description
+# YouTube Videos listing
 
 - This is a simple youtube clone app. It uses the YouTube API to search and list videos. It is built with React JS and Typescript.
 - It is responsive and mobile friendly. It is a good example of how to use the YouTube API with React JS and Typescript.
